@@ -163,16 +163,16 @@
                     <img src="assets/logo.svg" alt="Product Image">
                 </div>
                 <div class="nav-links">
-                    <a href="#features">Специфікації</a>
-                    <a href="#about">Документація</a>
-                    <a href="#contact">Замовлення</a>
+                    <a href="#spec">Специфікація</a>
+                    <a href="#doc">Документація</a>
+                    <a href="#contact">Контакти</a>
                 </div>
             </nav>
             <div class="hero">
                 <div class="hero-text">
                     <h1>ZX Spectrum 128</h1>
                     <p>10 на 10 см</p>
-                    <button>Github</button>
+                    <button onclick="location.href='https://github.com/5ht/zx'" type="button">Github</button>
                 </div>
                 <div class="hero-image">
                     <img width=300 src="assets/10x10.jpeg" alt="Product Image">
@@ -183,22 +183,57 @@
 
     <main>
     <section id="specifications" class="container">
-            <h2>Характеристики</h2>
+            <h2><a name="spec">Специфікація</a></h2>
             <table class="specs">
                 <tr>
                     <th>Процесор:</th>
-                    <td>Z80A</td>
+                    <td>Zilog Z80A 3.5469 MHz</td>
                 </tr>
                 <tr>
                     <th>Пам'ять:</th>
-                    <td>61C1024 (128КБ)</td>
+                    <td>RAM 128КБ (61C1024), ROM 16KB (AT27C512)</td>
+                </tr>
+                <tr>
+                    <th>Банки:</th>
+                    <td>Мультиплексори (74HC153, 74HC157). OR логіка (74HC32) та інвертор (74HC04) для /MREQ, /RD, і /WR.</td>
+                </tr>
+                <tr>
+                    <th>Шина:</th>
+                    <td>Декодер (74HC138), Трансівер шини (74HC245).</td>
+                </tr>
+                <tr>
+                    <th>Осцилятор:</th>
+                    <td>Засобами K561LN2.</td>
                 </tr>
                 <tr>
                     <th>Графіка:</th>
-                    <td>Integrated Graphics Processor ARM® Mali™-T764 GPU</td>
+                    <td>256×192, 15 colors (74HC74, 74HC4040, 74HC273)</td>
+                </tr>
+                <tr>
+                    <th>Звук:</th>
+                    <td>N/A, зовнішнє підключення (AY-3-8912)</td>
+                </tr>
+                <tr>
+                    <th>Клавіатура:</th>
+                    <td>Матричний декодер (K561LN2)</td>
+                </tr>
+                <tr>
+                    <th>Касетний привід:</th>
+                    <td>256×192, 15 кольорів (74HC74, 74HC4040)</td>
+                </tr>
+                <tr>
+                    <th>PAL JEDEC:</th>
+                    <td>4 x GAL16V8 (Horizontal, Vertical, RAM, VIDEO).</td>
                 </tr>
             </table>
         </section>
+    <section id="specifications" class="container">
+            <h2><a name="doc">Документація</a></h2>
+            <p>[1]. <a href="10x10_scheme.zip">Схема плати PCB 10x10 (Rev 2.0)</a><br>
+               [2]. <a href="pcb_gerber.zip">Шари плати для друкування в Gerber (Rev 2.1)</a><br>
+               [3]. <a href="pal_jedec.zip">Матриці програмування GAL16V8 (Rev 2.0)</a><br>
+            </p>
+    </section>
         </main>
 
     <footer>
