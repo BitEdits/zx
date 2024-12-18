@@ -3,156 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://retro.5ht.co/style.css" />
     <title>ZX</title>
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header {
-            background: linear-gradient(135deg, #004540, #F06347);
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 40px 0;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .hero button {
-            background: #ff4500;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .hero button:hover {
-            background: #e03e00;
-        }
-
-        .hero img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        section {
-            padding: 40px 0;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-        }
-
-        .features {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .feature {
-            flex: 1 1 30%;
-            margin: 10px;
-            text-align: center;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
-
-        .specs {
-            margin-top: 20px;
-            width: 100%;
-            border-spacing: 0;
-            border-collapse: separate;
-        }
-
-        .specs th, .specs td {
-            padding: 12px 15px;
-            text-align: left;
-        }
-
-        .specs th {
-            background-color: #f9f9f9;
-            border-bottom: 2px solid #e5e5e5;
-            font-weight: bold;
-        }
-
-        .specs td {
-            border-bottom: 1px solid #e5e5e5;
-            color: #555;
-        }
-
-        .specs tr:nth-child(even) td {
-            background-color: #fafafa;
-        }
-
-        .specs tr:hover td {
-            background-color: #f1f1f1;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        footer a {
-            color: #ff6347;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <style>header { background: linear-gradient(135deg, #004540, #F06347); }</style>
 </head>
 <body>
     <header>
@@ -183,10 +36,6 @@
     <main>
     <section id="intro" class="container">
             <h2><a name="spec">Український ZX Спектрум</a></h2>
-       <!-- for English version
-       <p>This PCB is a modern replica or redesign of the original ZX Spectrum 128. It uses newer and more reliable components while retaining compatibility with the original architecture.
-          Integration of modern logic ICs (74HC series) provides higher performance and lower power consumption compared to the original chips. The AY-3-8912 sound chip or its equivalent is not present but may be connected externally or included elsewhere. Designed for hobbyists, collectors, or educational purposes to recreate and experience the original ZX Spectrum 128 functionality.</p>
-       -->
        <p>Ця друкована плата є сучасною модифікованою копією оригінального ZX Spectrum 128. Вона використовує приблизно ті самі компоненти, зберігаючи сумісність із оригінальною архітектурою.
           Використання сучасних логічних мікросхем (серія 74HC) забезпечує більш високу продуктивність і менше енергоспоживання порівняно з оригінальними мікросхемами.
           Звуковий чіп AY-3-8912 або його еквівалент відсутній, але може бути підключений ззовні.
@@ -238,13 +87,21 @@
             <p>[1]. <a href="10x10_scheme.zip">Принципова схема плати "10x10" (Rev 2.0)</a><br>
                [2]. <a href="pcb_gerber_rev2.1.zip">Шари плати для друкування в Gerber (Rev 2.1)</a><br>
                [3]. <a href="pal_jedec.zip">Матриці програмування GAL16V8 (Rev 2.0)</a><br>
+               [4]. <a href="https://www.youtube.com/@funoldgamer/videos">Youtube канал Fun Old Gamer</a><br>
+               [5]. <a href="https://olx.ua/list/user/5MXR2/">OLX магазин Олександра Карнаухова</a>
             </p>
     </section>
-        </main>
-
-    <footer>
-        <p> 2024 &copy; KS GROUP. All rights reserved.</p>
-    </footer>
+    <section id="specifications" class="container">
+            <h2><a name="doc">Код</a></h2>
+            <p>[1]. <a href="10x10_scheme.zip">Принципова схема плати "10x10" (Rev 2.0)</a><br>
+               [2]. <a href="pcb_gerber_rev2.1.zip">Шари плати для друкування в Gerber (Rev 2.1)</a><br>
+               [3]. <a href="pal_jedec.zip">Матриці програмування GAL16V8 (Rev 2.0)</a><br>
+            </p>
+    </section>
+</main>
+<footer>
+    <p> 2024 &copy; KS GROUP. All rights reserved.</p>
+</footer>
 </body>
 </html>
 
